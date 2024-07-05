@@ -14,6 +14,11 @@ local TextButton4 = Instance.new("TextButton")
 local TextButton8 = Instance.new("TextButton")
 local TextButton7 = Instance.new("TextButton")
 local TextButton9 = Instance.new("TextButton")
+local keygu = Instance.new("ScreenGui")
+local Frame_2 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextLabel = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
 
 --Properties:
 
@@ -126,7 +131,7 @@ TextButton8.Position = UDim2.new(0.434175521, 0, 0.371951222, 0)
 TextButton8.Size = UDim2.new(0, 128, 0, 53)
 TextButton8.Style = Enum.ButtonStyle.RobloxRoundButton
 TextButton8.Font = Enum.Font.SourceSans
-TextButton8.Text = "Speed"
+TextButton8.Text = "Jump"
 TextButton8.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton8.TextScaled = true
 TextButton8.TextSize = 49.000
@@ -141,7 +146,7 @@ TextButton7.Position = UDim2.new(0.349069148, 0, 0.371951222, 0)
 TextButton7.Size = UDim2.new(0, 128, 0, 53)
 TextButton7.Style = Enum.ButtonStyle.RobloxRoundButton
 TextButton7.Font = Enum.Font.SourceSans
-TextButton7.Text = "Jump"
+TextButton7.Text = "Speed"
 TextButton7.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton7.TextScaled = true
 TextButton7.TextSize = 49.000
@@ -162,9 +167,71 @@ TextButton9.TextScaled = true
 TextButton9.TextSize = 49.000
 TextButton9.TextWrapped = true
 
+keygu.Name = "keyguı"
+keygu.Parent = ScreenGui
+keygu.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame_2.Parent = keygu
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0660409704, 0, 0.298780501, 0)
+Frame_2.Size = UDim2.new(0, 366, 0, 286)
+Frame_2.Style = Enum.FrameStyle.RobloxRound
+
+TextBox.Parent = keygu
+TextBox.BackgroundColor3 = Color3.fromRGB(44, 44, 255)
+TextBox.BackgroundTransparency = 0.500
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0926367193, 0, 0.407317072, 0)
+TextBox.Size = UDim2.new(0, 285, 0, 85)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TextLabel.Parent = keygu
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.120983571, 0, 0.310220718, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Get Key: https://discord.gg/wNTvWsnaUq or mentoslua.github.io"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton_2.Parent = keygu
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.121393181, 0, 0.551219523, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Style = Enum.ButtonStyle.RobloxRoundButton
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Start"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 88.000
+TextButton_2.TextWrapped = true
+
 -- Scripts:
 
-local function UFPFN_fake_script() -- ScreenGui.LocalScript 
+local function SDRHAY_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	ocal TweenService = game:GetService("TweenService")
+	
+	script.Parent:TweenPosition(Udim2.new(0.5,0,0.5,0),Enum.EasingDirection.Out, EasingStyle.Quad, 2)
+end
+coroutine.wrap(SDRHAY_fake_script)()
+local function ACFR_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local guiParent = script.Parent
@@ -194,8 +261,8 @@ local function UFPFN_fake_script() -- ScreenGui.LocalScript
 		warn("TextButton3 bulunamadı veya isim yanlış!")
 	end
 end
-coroutine.wrap(UFPFN_fake_script)()
-local function EYIGQD_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(ACFR_fake_script)()
+local function IFCIMPJ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local guiParent = script.Parent
@@ -228,8 +295,8 @@ local function EYIGQD_fake_script() -- ScreenGui.LocalScript
 		end)
 	end
 end
-coroutine.wrap(EYIGQD_fake_script)()
-local function QIRUPI_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(IFCIMPJ_fake_script)()
+local function YOKR_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local guiParent = script.Parent
@@ -254,8 +321,8 @@ local function QIRUPI_fake_script() -- ScreenGui.LocalScript
 		end)
 	end
 end
-coroutine.wrap(QIRUPI_fake_script)()
-local function RHNRW_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(YOKR_fake_script)()
+local function XTCHEBQ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local guiParent = script.Parent
@@ -278,8 +345,8 @@ local function RHNRW_fake_script() -- ScreenGui.LocalScript
 		end)
 	end
 end
-coroutine.wrap(RHNRW_fake_script)()
-local function ONPATND_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(XTCHEBQ_fake_script)()
+local function DMQZK_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local guiParent = script.Parent
@@ -315,4 +382,164 @@ local function ONPATND_fake_script() -- ScreenGui.LocalScript
 		end)
 	end
 end
-coroutine.wrap(ONPATND_fake_script)()
+coroutine.wrap(DMQZK_fake_script)()
+local function RKCNAK_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local guiParent = script.Parent
+	local gui2 = guiParent:FindFirstChild("keyguı")
+	
+	-- Debugging: Print the names of the found elements
+	if gui2 then
+		print("Found 'keyguı' GUI element.")
+	else
+		warn("'keyguı' GUI element is missing.")
+	end
+	
+	local textButton = gui2 and gui2:FindFirstChild("TextButton") or nil
+	local textBox = gui2 and gui2:FindFirstChild("TextBox") or nil
+	
+	-- Debugging: Print the names of the found elements
+	if textButton then
+		print("Found 'TextButton' GUI element.")
+	else
+		warn("'TextButton' GUI element is missing.")
+	end
+	
+	if textBox then
+		print("Found 'TextBox' GUI element.")
+	else
+		warn("'TextBox' GUI element is missing.")
+	end
+	
+	guiParent.Enabled = false -- Initially disable the GUI parent
+	
+	local keys = {
+		"DxKePNsZoEYfGbV",
+		"ZmBjaPLzYdrU3Xk",
+		"cvTHRqiXfbnFsMJ",
+		"iUmdBzRWhCAV7ql",
+		"FwRzTmPJeOiNkuI",
+		"cVXUkBZazWs4wQ5",
+		"oKLpJdCnfxAVhGu",
+		"SEKkOiFhBY8xwnv",
+		"WxjzvNmGJupHyiS",
+		"qOiyFNLvsRKJYup",
+		"vnCWBsgFL6oHPdR",
+		"gSKMypZlBq7UnDh",
+		"MUXfQtahvGn0vks",
+		"ltBcEnyKdJQYVNA",
+		"TjWESdfOcNmr0FQ",
+		"RsZrBbLUwxK6TCY",
+		"fcRsyxVZKN1QUtW",
+		"hRbxqtBD3FJmc8o",
+		"gWNrmOfu1PAK6lQ",
+		"UVXmMpvFHys5zGb",
+		"zsVNchWTjy8pRiq",
+		"JFwvbDTYQgnSRlX",
+		"AUqMlsCFkdT4Hbr",
+		"iEROnbvQPWyKCJr",
+		"FpsHyTjkZVEB5ua",
+		"HmxcwJupL2ByFGk",
+		"kqjNYAhZWpvl2uf",
+		"YsVbxCJG9PiwBnd",
+		"tUVHJoOmSRYLzWP",
+		"lPqbnYpOWTcGkU9",
+		"CiyjQsRz6HpV8NM",
+		"YhbtzXTm3sK4jUV",
+		"rbTkPVNU8ALzDhc",
+		"SJNUWcehO7MYTzP",
+		"qvniOpNmHTYF4Bo",
+		"MFboqTJvn6mFwyC",
+		"eFnvkwJrDPWmTiG",
+		"kYhVgoSdj7zxFRq",
+		"VDzfiXuKrYTmPnG",
+		"EobdxlNR4qwUjmv",
+		"VjypChWRGbF8nqe",
+		"xzLVlWpKD8ymNiU",
+		"mhIkTaSJ9cvwGRf",
+		"LgUXMsxdVR6KtwO",
+		"fNcJuKLmhFWRpAT",
+		"kzqJyOBhdGiSNMP",
+		"jNcpSoBYU6eRmav",
+		"dOXfLbFJRAWsEgN",
+		"KvyGXmhBfqUzjWC",
+		"sPvJhXkyFUwEdlC",
+		"NglRkVUFxmHq9Cd",
+		"qxlMpfYoUJ8TVms",
+		"yKuWCANlXkoUVne",
+		"GbYJkpNchPrVdZx",
+		"PhKNZFbMdjc4oDR",
+		"erHJuBsYnSMoF7K",
+		"NJGbxXTyu8Odwfs",
+		"eNzgLPV7MoSfWjv",
+		"hpctDKMuPfnBzWa",
+		"yTBzRkjSFuqVlpG",
+		"BpqfdhGEWLK6a5u",
+		"svTKNyrXJpVBlHi",
+		"OqLFDldBWcpoVfY",
+		"TJMVwmEhsfYKHkN",
+		"dnLhVKeZFBjPmsA",
+		"FjPeHKUnCqdOeXs",
+		"zHbgPaxRQwlFocG",
+		"JzRpWjXitTqLymM",
+		"ZoMRhTcFxPKvDyi",
+		"iGoVDUKRzLcXAsB",
+		"qpXNojLJYMBkVtz",
+		"YwvjCDKzAfxl5mS",
+		"bsWVnTLAqxjMucH",
+		"qLiFMSkKwNuybxO",
+		"KhxzByGqMjoFRvE",
+		"jlhwVzDBXKkoUie",
+		"JVFrbDyMufXtCZc",
+		"hziZqRAcGTKNMXV",
+		"LdtFkOzwPlmrSgY",
+		"HsKVLZAkTynivMd",
+		"iqOcGwSTrmCuhpZ",
+		"vRtYLWfshZ7IPGd",
+		"HgZluXkQCNTOiDb",
+		"YmziTrUfxkJLKhE",
+		"JuTwhfnvlRK9oPm",
+		"qetRKPBlOfnvCMi",
+		"qUyZPDvhrTxFbLz",
+		"XioTdvUMLsyrEAP",
+		"OesibUZPYMGzlao",
+		"rEbUQwHDFJGsMnS",
+		"gEFmpshiZCuyQbW",
+		"SmWPeKdTByNUhFA",
+		"NuXpiRHFXrsqLMv",
+		"sTGoBKjpMqhNCYe",
+		"frcpPdYWLvzHqKM",
+		"NyBZtdfuVlaWJOp",
+		"kDNaAzOljBQpPHw",
+		"FmNWxiVrDCspgbY"
+	}
+	
+	local function isKeyValid(key)
+		for _, validKey in ipairs(keys) do
+			if key == validKey then
+				return true
+			end
+		end
+		return false
+	end
+	
+	if textButton and textBox then
+		textButton.MouseButton1Click:Connect(function()
+			local exec_key = textBox.Text -- Capture the key from the TextBox
+	
+			if isKeyValid(exec_key) then
+				print("Key is valid! Proceed with the script.")
+				guiParent.Enabled = true -- Enable the GUI if the key is valid
+				gui2.Enabled = false
+			else
+				print("Key is invalid or expired.")
+				guiParent.Enabled = false -- Keep the GUI disabled if the key is invalid
+				textBox.Text = "Invaild or expired key"
+			end
+		end)
+	else
+		warn("Key GUI elements are missing.")
+	end
+end
+coroutine.wrap(RKCNAK_fake_script)()
